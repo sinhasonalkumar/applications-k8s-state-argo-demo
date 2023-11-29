@@ -3,4 +3,4 @@ dependencies:
   repository: https://sinhasonalkumar.github.io/micro-service-helm-repository-argo-demo/
   version: 0.1.0
 digest: sha256:1d1f260c1de548f744eb52615a4e66670f5e0fe011d15ae11ec18baa5dba823f
-generated: "2023-11-28T16:44:05.633825-07:00"
+generated: "2023-11-28T19:38:12.6678-07:00"

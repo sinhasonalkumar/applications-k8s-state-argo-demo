@@ -23,7 +23,7 @@ micro-service-helm-chart:
 
   appNetworking:
     gateways:
-    - istio-system/micro-service-ig
+    - istio-system/qa-micro-service-ig
     apiHosts:
     - api.mycompany.com
     mgmtHost: mgmt-api.mycompany.com
