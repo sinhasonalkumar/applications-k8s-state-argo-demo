@@ -25,8 +25,8 @@ micro-service-helm-chart:
     gateways:
     - istio-system/dev-micro-service-ig
     apiHosts:
-    - api.mycompany.com
-    mgmtHost: mgmt-api.mycompany.com
+    - api-dev.mycompany.com
+    mgmtHost: mgmt-api-dev.mycompany.com
     corsPolicy:
       allowOrigins:
         - regex: 'http://*.company.com'
