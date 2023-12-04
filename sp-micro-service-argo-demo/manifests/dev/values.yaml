@@ -3,7 +3,7 @@ micro-service-helm-chart:
   domain: demo
   serviceName: sp-micro-service-argo-demo
   serviceBaseContext: ds
-  imageVersion: 1.0.0
+  imageVersion: 1.2.0
   imagePullPolicy: Always
   replicas: 2
   port: 8080
@@ -15,36 +15,27 @@ micro-service-helm-chart:
       memory: 512Mi
     limits:
       memory: 512Mi
-
   healthCheckURI: /ds/actuator/health
   healthCheckPort: 8080
   initContainer:
     image: busybox:1.35.0
-
   appNetworking:
     gateways:
-    - istio-system/dev-micro-service-ig
+      - istio-system/dev-micro-service-ig
     apiHosts:
-    - api-dev.mycompany.com
+      - api-dev.mycompany.com
     mgmtHost: mgmt-api-dev.mycompany.com
     corsPolicy:
       allowOrigins:
         - regex: 'http://*.company.com'
       allowMethods:
-      - GET
-      - POST
-      - PUT
-      - DELETE
-      - OPTIONS
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - OPTIONS
       allowCredentials: false
       allowHeaders:
-      - Authorization
-      - Content-Type
+        - Authorization
+        - Content-Type
       maxAge: "24h"
-
-
-
-
-
-
-
