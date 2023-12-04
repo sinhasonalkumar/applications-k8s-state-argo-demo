@@ -3,7 +3,7 @@ micro-service-helm-chart:
   domain: demo
   serviceName: sp-micro-service-argo-demo
   serviceBaseContext: ds
-  imageVersion: 1.1.0
+  imageVersion: 1.2.0
   imagePullPolicy: Always
   replicas: 2
   port: 8080
